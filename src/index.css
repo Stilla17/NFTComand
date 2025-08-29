@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+body {
+    background-color: #2B2B2B;
+}
+
+.divd {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
