@@ -3,12 +3,11 @@ import Props from '../Props/Props'
 import balon from './../../assets/img/imggg.png'
 
 
-const Navbar = () => {
+const About = () => {
   return (
-    <div className='w-300 m-auto pt-30 '>
-      <img className='' src={balon} alt="" />
+    <div className={`h-[700px]  bg-[url(src/assets/img/imggg.png)] bg-cover bg-no-repeat  ` }>
     </div>
   )
 }
 
-export default Navbar
+export default About

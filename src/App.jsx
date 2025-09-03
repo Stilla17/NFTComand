@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './Componets/Header/Header'
-import Navbar from './Componets/Navbar/Navbar'
+import Disko from './Componets/Disko/Disko'
+import About from './Componets/About/About'
 
 const App = () => {
   return (
     <div>
-       <Header />
-       <Navbar />
+       <Disko />
+       <About />
        
     </div>
   )

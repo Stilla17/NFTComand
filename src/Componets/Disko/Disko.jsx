@@ -19,7 +19,7 @@ import dfx2 from './../../assets/icons/Avatar (10).png'
 
 
 
-const Header = () => {
+const Disko = () => {
   return (
     <>
     <div className='flex justify-between items-center pe-35 ps-17'>
@@ -35,7 +35,7 @@ const Header = () => {
       </div>
     </div>
 
-    <div className='flex justify-center  gap-13 pt-20 '>
+    <div className='flex justify-center pb-20  gap-13 pt-20 '>
       <Props  
       qator={between}
       title={"Distant Galaxy"}
@@ -74,4 +74,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Disko
