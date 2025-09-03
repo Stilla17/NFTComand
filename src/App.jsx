@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react"; 
+import Login from "./Components/Login/Login"
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
-  )
+    <div className="min-h-screen bg-gray-900 text-white font-sans">
+      <Login />
+    </div>
+  );
 }
 
-export default App
+export default App;
