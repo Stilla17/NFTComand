@@ -1,8 +1,8 @@
 import React from 'react'
-import Disko from './Componets/Disko/Disko'
-import About from './Componets/About/About'
+import Disko from './Components/Disko/Disko'
+import About from './Components/About/About'
 import Login from "./Components/Login/Login"
-import Browse from './Componets/Componets/Browse/Browse'
+import Browse from './Components/Browse/Browse'
 
 function App() {
   return (
