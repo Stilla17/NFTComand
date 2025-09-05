@@ -1,5 +1,5 @@
 import React from 'react'
-import Props from '../Props/Props'
+import Props from '../Card/Card'
 import img from './../../assets/icons/Eye.png'
 import between from './../../assets/img/Image (3).png'
 import dfx from './../../assets/icons/Avatar (8).png'

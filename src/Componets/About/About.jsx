@@ -1,5 +1,5 @@
 import React from 'react'
-import Props from '../Props/Props'
+import Props from '../Card/Card'
 import balon from './../../assets/img/imggg.png'
 
 
