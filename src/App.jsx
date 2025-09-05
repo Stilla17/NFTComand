@@ -1,6 +1,6 @@
 import React from 'react'
-import Section from './Components/Section/Section'
 import Header from './Components/Header/Header'
+import Section from './Components/Section/Section'
 
 const App = () => {
   return (
