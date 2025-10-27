@@ -1,13 +1,13 @@
 import React from 'react'
-import Menu from '../Component/Menu'
 import { Outlet } from 'react-router'
+import SideBar from '../Component/SideBar/SideBar'
 
 const Layout = () => {
     return (
         <div>
             <div className="flex">
-                <Menu />
-
+                <SideBar />
+                
                 <Outlet />
 
             </div>
