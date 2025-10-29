@@ -6,7 +6,6 @@ import Profile from './Page/Profile'
 import WriteBoard from './Page/WriteBoard'
 import Likes from './Page/Likes'
 import Settings from './Page/Settings'
-
 const App = () => {
   return (
     <>
