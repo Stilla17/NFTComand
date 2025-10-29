@@ -3,7 +3,7 @@ import search4 from './../assets/pick file.png'
 
 const Profile = () => {
   return (
-    <div className='ml-[10%]'>
+    <div className='ml-[16%] max-w-[1220px]'>
       <div className='flex itmes-center pt-10'>
         <div>
           <p className='text-white text-3xl'>Setting</p>
