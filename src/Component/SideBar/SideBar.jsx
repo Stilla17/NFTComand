@@ -16,7 +16,7 @@ const SideBar = () => {
 
   return (
     <>
-      <div className={`${open ? "w-[6%]" : "w-[14%]"} bg-[#1D1932] px-[25px] pt-[30px] text-white flex flex-col items-center h-[100vh] fixed  transition-all duration-500 ease-in-out`}>
+      <div className={`${open ? "w-[6%]" : "w-[14%]"} bg-[#1D1932] z-30 px-[25px] pt-[30px] text-white flex flex-col items-center h-[100vh] fixed  transition-all duration-500 ease-in-out`}>
         <img src={logo} alt="logo" onClick={() => setOpen(!open)} className='transition-transform duration-500' />
 
         <ul className='mt-[58px] flex flex-col gap-[50px]'>

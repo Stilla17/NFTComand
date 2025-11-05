@@ -6,6 +6,7 @@ import Profile from './Page/Profile'
 import WriteBoard from './Page/WriteBoard'
 import Likes from './Page/Likes'
 import Settings from './Page/Settings'
+import Img from './Page/Img'
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
           <Route index path='/star' element={<Star />} />
           <Route index path='/profile' element={<Profile />} />
           <Route index path='/settings' element={<Settings />} />
+          <Route index path='/img/:id' element={<Img/>}/>
         </Route>
       </Routes>
 
