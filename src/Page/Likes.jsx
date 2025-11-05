@@ -12,7 +12,6 @@ const Likes = () => {
             const res = await axios(`https://api.themoviedb.org/3/trending/all/day?api_key=${APIKey}&page=1`)
             console.log(res.data.results);
             setData(res.data.results)
-
         } catch (err) {
             console.log(err);
         }
@@ -24,7 +23,7 @@ const Likes = () => {
 
     return (
         <div className='ml-[10%]'>
-            
+
         </div>
     )
 }
