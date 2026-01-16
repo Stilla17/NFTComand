@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.div{
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDeA3nIUL176a99Wy6VKgC93LMCRgFDwou95wO5IbsVnK-y9l4ItErNflhZGrvI8F6_4dB0thzqfayguSpVKVmkc-Ytfky2GmNSrar_Z7Uz8m0Vi0vEOiZb1Ui7XxFClB2-MO53JuC8nXru_zLjs-ipu53o_e4EbohmkV0mIt1pWlGRPC0n_5jkacop5VJ_8Zp0Eau6h-g2swOGfv5J2d7CqwZ_1OWRRD-vD3fHRh-QywCG0Vf6x3IxtMFOWzwE1uahBYGkvlJRcqzZ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}

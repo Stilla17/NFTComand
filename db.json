@@ -1,0 +1,10 @@
+{
+    "todo": [
+        {
+            "id": 1,
+            "name": "Learn Redux",
+            "age": 21,
+            "job": "Student"
+        }
+    ]
+}
