@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    counter: 0
+    counter: 0,
+    dark: false
 }
 
 const counterSlice = createSlice({
@@ -18,10 +19,13 @@ const counterSlice = createSlice({
             } else {
                 state.counter = 0
             }
+        },
+        tecrement: (state) => {
+            state.dark = !state.dark
         }
     }
 });
 
-export const { increment, decrement } = counterSlice.actions
+export const { increment, decrement, tecrement } = counterSlice.actions
 
 export default counterSlice.reducer
