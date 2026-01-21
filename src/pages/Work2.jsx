@@ -3,6 +3,7 @@ import nega from './../assets/nega.png';
 import video from './../assets/igm.png';
 import dw from './../assets/dw.png';
 import na from './../assets/op.png';
+
 const Work2 = () => {
     return (
         <div className='flex'>
