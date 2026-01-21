@@ -18,21 +18,21 @@ const InfoPage = () => {
     const counter = useSelector((state) => state.counter.counter)
     const counterDark = useSelector((state) => state.counter.dark)
     const dispatch = useDispatch()
-    const {id} = useParams()
+    const { id } = useParams()
     const [game, setGame] = useState([])
     useEffect(() => {
-         async function  fetchProduct () {
-           try {
-            const res = await fetch(`https://67665085410f84999657549a.mockapi.io/games/${id}`)
-            const data = await res.json()
-            console.log(data);
-             setGame(data)
-           } catch (e) {
-            console.log(error);  
-           }
-         }
-         
-         fetchProduct()
+        async function fetchProduct() {
+            try {
+                const res = await fetch(`https://67665085410f84999657549a.mockapi.io/games/${id}`)
+                const data = await res.json()
+                console.log(data);
+                setGame(data)
+            } catch (e) {
+                console.log(error);
+            }
+        }
+
+        fetchProduct()
     }, [id])
     const showSuccess = () => {
         toast.current.show({ severity: 'success', summary: '', detail: 'DOWNLOAD TORRENT (65 GB) ', life: 3000 });
@@ -40,55 +40,6 @@ const InfoPage = () => {
 
     return (
         <div className="bg-background-light dark:bg-background-dark divvvv font-display text-slate-900 dark:text-white transition-colors duration-300  ">
-
-            {/* Header */}
-            <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-                <div className="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between gap-8">
-
-                    {/* Logo */}
-                    <div className="flex items-center gap-3">
-                        <img src={Game} alt="" />
-                        <h1 className="text-xl font-bold ">
-                            TorrentGameHub
-                        </h1>
-                    </div>
-
-                    {/* Nav */}
-                    <nav className="hidden md:flex gap-6">
-                        {["Browse", "Popular", "New Releases", "Community"].map(link => (
-                            <a
-                                key={link}
-                                href="#"
-                                className="text-sm font-semibold hover:text-primary transition-colors"
-                            >
-                                {link}
-                            </a>
-                        ))}
-                    </nav>
-
-                    {/* Search */}
-                    <div className="flex-1 max-w-xl ">
-                        <div className="relative flex items-center gap-10">
-                            <span className="material-symbols-outlined absolute left-3 top-8 -translate-y-1/2 ">
-                                search
-                            </span>
-                            <input
-                                type="text"
-                                placeholder="Search games..."
-                                className=" bg-black/5 dark:bg-white/5 border border-primary/20 rounded-lg py-2 pl-10 pr-3 focus:outline-none focus:ring-1 focus:ring-primary w-70 "
-                            />
-
-
-                            <Link to="/login">
-                                <button className='bg-blue-500 w-25 h-8  rounded-lg'>Sign In</button>
-                            </Link>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </header>
 
             {/* Main */}
             <main className="max-w-[1440px] mx-auto px-6 py-8 ">

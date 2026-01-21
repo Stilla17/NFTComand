@@ -5,15 +5,18 @@ import Work from './pages/Work'
 import Work2 from './pages/Work2'
 import Login from './pages/Login'
 import InfoPage from './pages/InfoPage'
+import Layout from './pages/Layout'
 
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/:id' element={<InfoPage />} />
-      <Route path='/work' element={<Work />} />
-      <Route path='/work2' element={<Work2 />} />
-      <Route path='/login' element={<Login />} />
+      <Route path='/' element={<Layout />}>
+        <Route path='/' element={<Home />} />
+        <Route path='/:id' element={<InfoPage />} />
+        <Route path='/work' element={<Work />} />
+        <Route path='/work2' element={<Work2 />} />
+        <Route path='/login' element={<Login />} />
+      </Route>
 
 
     </Routes>
