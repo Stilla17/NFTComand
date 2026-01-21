@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.divvvv {
+    background-image:url('./assets/unnamed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
