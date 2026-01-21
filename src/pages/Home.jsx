@@ -66,16 +66,16 @@ const Home = () => {
               <span className="material-symbols-outlined">menu</span>
             </button>
           </div>
-
+    
           {/* Search Bar */}
           <div className="flex-1 max-w-xl">
             <div className="relative group">
-              <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary/50 group-focus-within:text-primary">
+              <span className="material-symbols-outlined absolute left-3 top-8 -translate-y-8 text-primary/50 group-focus-within:text-primary">
                 search
               </span>
               <input
                 type="text"
-                value={searchTerm}
+                value={searchTerm}  
                 onChange={(e) => dispatch(filterData(e.target.value))}
                 placeholder="Search 5,000+ games..."
                 className="w-full bg-black/5 dark:bg-white/5 border border-primary/20 rounded-lg py-2 pl-10 pr-4 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
