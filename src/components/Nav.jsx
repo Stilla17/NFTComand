@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData, filterData } from "../features/games/gamesSlice";
+import { Link } from "react-router";
 
 const Nav = () => {
     const dispatch = useDispatch();
@@ -68,11 +69,13 @@ const Nav = () => {
                         <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
                     </button>
                     <div className="h-10 w-10 rounded-full border border-primary/30 p-0.5">
-                        <img
-                            className="w-full h-full rounded-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBT5njPXJ2oSF_d7OmrqLVeYnVIxYYyUS_p3xqFUn_qRci60TvTapyUHxpAMzp1CNqzvQfvTa08J7cq5pkKsRVgW-LecftOXVva67KZMHAqesd43PQWvgA02KveMKjL2C8uA0CdouPKCDgoi9bRFyw_RE3HMX16_2lICkd8CPZvcIIIamRkcWPQGUcviPT5bjW7GAeFuzZ9ommSQicncX-L4rRCumQFVYRibrE8Uuf6R5Ru34tdpeFKHnLwOX4MORdMizMd6VzyUQi"
-                            alt="User profile avatar icon"
-                        />
+                        <Link to='/admin'>
+                            <img
+                                className="w-full h-full rounded-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBT5njPXJ2oSF_d7OmrqLVeYnVIxYYyUS_p3xqFUn_qRci60TvTapyUHxpAMzp1CNqzvQfvTa08J7cq5pkKsRVgW-LecftOXVva67KZMHAqesd43PQWvgA02KveMKjL2C8uA0CdouPKCDgoi9bRFyw_RE3HMX16_2lICkd8CPZvcIIIamRkcWPQGUcviPT5bjW7GAeFuzZ9ommSQicncX-L4rRCumQFVYRibrE8Uuf6R5Ru34tdpeFKHnLwOX4MORdMizMd6VzyUQi"
+                                alt="User profile avatar icon"
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>

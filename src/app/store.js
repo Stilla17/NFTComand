@@ -4,9 +4,9 @@ import todoReducer from '../features/todo/todoSlice';
 import gamesReducer from '../features/games/gamesSlice';
 
 export const store = configureStore({
-    reducer: {
-        counter: counterReducer,
-        todo: todoReducer,
-        games: gamesReducer
-    }
-})
+        reducer: {
+                counter: counterReducer,
+                todo: todoReducer,
+                games: gamesReducer
+        }
+}) 

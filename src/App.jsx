@@ -5,7 +5,10 @@ import Work from './pages/Work'
 import Work2 from './pages/Work2'
 import Login from './pages/Login'
 import InfoPage from './pages/InfoPage'
+import AdminPanel from './pages/AdminPanel'
+import Games from './pages/Games'
 import Layout from './pages/Layout'
+import AdminLayot from './pages/AdminLayot'
 
 const App = () => {
   return (
@@ -17,8 +20,10 @@ const App = () => {
         <Route path='/work2' element={<Work2 />} />
         <Route path='/login' element={<Login />} />
       </Route>
-
-
+      <Route element={<AdminLayot />}>
+        <Route path='/admin' element={<AdminPanel />} />
+        <Route path='/games' element={<Games />} />
+      </Route>
     </Routes>
   )
 }
