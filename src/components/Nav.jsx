@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData, filterData } from "../features/games/gamesSlice";
-import { Link } from "react-router";
+import { Link, Links } from "react-router";
 
 const Nav = () => {
     const dispatch = useDispatch();
@@ -33,10 +33,10 @@ const Nav = () => {
 
                 {/* Nav Links */}
                 <nav className="hidden md:flex items-center gap-4 lg:gap-6">
-                    <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
-                    <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Browse</a>
-                    <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Categories</a>
-                    <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">Requests</a>
+                    <Link className="text-sm font-semibold hover:text-primary transition-colors" to='/'>Home</Link>
+                    <Link className="text-sm font-semibold hover:text-primary transition-colors" to='/'>Browse</Link>
+                    <Link className="text-sm font-semibold hover:text-primary transition-colors" to='/'>Categories</Link>
+                    <Link className="text-sm font-semibold hover:text-primary transition-colors" to='/'>Requests</Link>
                 </nav>
 
                 {/* Mobile Menu Icon */}

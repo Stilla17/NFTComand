@@ -1,5 +1,6 @@
 import React from "react";
-import { Search } from "lucide-react";
+import { LogOut, Search } from "lucide-react";
+import { Link } from "react-router";
 
 const HeaderPanel = () => {
   return (
@@ -20,6 +21,7 @@ const HeaderPanel = () => {
           className="pl-10 pr-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
+      <Link to='/'><LogOut /></Link>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const SideBarPanel = () => {
 
 
       <ul className="space-y-4">
-        <Link to='/' className="flex items-center gap-3 text-gray-700 cursor-pointer hover:text-blue-500">
+        <Link to='/admin' className="flex items-center gap-3 text-gray-700 cursor-pointer hover:text-blue-500">
           <BarChart2 size={20} />
           <span className="text-lg">Dashboard</span>
         </Link>
